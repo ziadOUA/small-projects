@@ -1,0 +1,369 @@
+@font-face {
+    font-family: "PP Neue Machina Inktrap Ultrabold";
+    src: url("fonts/Neue Machina/PPNeueMachina-InktrapUltrabold.otf");
+}
+
+@font-face {
+    font-family: "PP Neue Machina Plain Regular";
+    src: url("fonts/Neue Machina/PPNeueMachina-PlainRegular.otf");
+}
+
+@font-face {
+    font-family: "PP Neue Machina Plain Ultrabold";
+    src: url("fonts/Neue Machina/PPNeueMachina-PlainUltrabold.otf");
+}
+
+@font-face {
+    font-family: "PP Mori Regular";
+    src: url("fonts/Mori/PPMori-Regular.otf");
+}
+
+@font-face {
+    font-family: "PP Right Didone Wide Ultrabold";
+    src: url("fonts/Right Didone/PP Right Didone - Wide Black.otf");
+}
+
+/* PAGE */
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    background-color: #F1F1EA;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    top: 0;
+    height: fit-content;
+    position: relative;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* HEADER */
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #FDFDF5;
+    /*position: fixed;*/
+    /*top: 0;*/
+    width: 100%;
+}
+
+.header-wrapper,
+.header-img {
+    height: 200px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.header-title {
+    font-family: "PP Neue Machina Inktrap Ultrabold", sans-serif;
+    background: -webkit-linear-gradient(#092100, #003737);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    border-bottom: none;
+}
+
+.header-subtitle {
+    font-family: "PP Neue Machina Plain Regular", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #1A1C18;
+    margin-left: 1px !important;
+}
+
+.header-title,
+.header-subtitle {
+    height: fit-content;
+    margin: 0;
+}
+
+    /* LANGUAGE */
+
+.language-wrapper {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.language-wrapper a {
+    font-family: "PP Mori Regular", sans-serif;
+    font-size: 12px;
+    color: grey;
+    cursor: pointer;
+}
+
+.language-wrapper a:first-child {
+    color: #316B0C;
+    font-weight: 800;
+}
+
+    /* CONNECTION BTN */
+
+.connection-wrapper {
+    width: fit-content;
+    display: flex;
+    align-content: center;
+    margin-inline: 25px 0;
+}
+
+.connection {
+    display: flex;
+    align-items: center;
+    background-color: #E0E4D6;
+    padding: 15px;
+    border-radius: 100vw;
+    gap: 10px;
+    height: 15px;
+    cursor: pointer;
+    transition: background-color 100ms ease-in;
+}
+
+.connection:hover {
+    background-color: #C4C8BB;
+}
+
+.connection p {
+    font-size: 16px;
+    font-family: "PP Neue Machina Plain Regular", sans-serif;
+    font-weight: 500;
+    width: fit-content;
+    margin: 0;
+    padding: 3px 5px 0 0;
+}
+
+    /* INVERTED CORNERS */
+
+:root {
+    --topleft-mask: radial-gradient(24px at 100% 100%,#0000 98%,#000);
+    --topright-mask: radial-gradient(24px at 0 100%,#0000 98%,#000);
+}
+
+.inverted-topleft-corner,
+.inverted-topright-corner {
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*margin-top: 200px;*/
+    width: 24px;
+    height: 24px;
+    background-color: #FDFDF5;
+    z-index: 2;
+}
+
+.inverted-topleft-corner {
+    -webkit-mask: var(--topleft-mask);
+    mask: var(--topleft-mask);
+}
+
+.inverted-topright-corner {
+    margin-left: auto;
+    /*right: 0;*/
+    margin-top: -24px;
+    -webkit-mask: var(--topright-mask);
+    mask: var(--topright-mask);
+}
+
+/* PAGE CONTENT */
+
+.page-content-wrapper {
+    display: grid;
+    grid-template-columns: 0.33fr 1fr 0.33fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    /*margin-top: 210px;*/
+    margin-top: -10px;
+    gap: 10px;
+    margin-inline: 10px;
+    margin-bottom: 10px;
+}
+
+.left-content-wrapper {
+    background-color: #B3EDED;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.main-content-wrapper {
+    background-color: #FDFDF5;
+    grid-area: 1 / 2 / 2 / 3;
+    border-radius: 20px;
+    padding: 35px;
+}
+
+.right-content-wrapper {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.left-content-wrapper,
+.right-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-content-wrapper,
+.right-1,
+.right-2,
+.right-3 {
+    border-radius: 20px;
+    padding: 15px;
+}
+
+    /* ARTICLES */
+
+.right-1-content,
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.article-title,
+.article-text {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.article-title {
+    font-family: "PP Neue Machina Plain Ultrabold", sans-serif;
+    font-size: 20px;
+}
+
+.article-text {
+    font-family: "PP Mori Regular", sans-serif;
+    line-height: 1.2;
+    text-align: justify;
+    font-size: 18px;
+}
+
+    /* LEFT */
+
+    /* MAIN */
+
+.main-title {
+    font-family: "PP Right Didone Wide Ultrabold", serif;
+    font-size: 32px;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.illustration {
+    aspect-ratio: 16/9;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.illustration-description {
+    text-align: center;
+    margin-block: 10px 30px;
+    font-family: "PP Mori", sans-serif;
+    color: #8D9286;
+    font-size: 15px;
+}
+
+.header-illustration {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8f/Some_like_it_hot_film_poster.jpg");
+}
+
+.illustration-1 {
+    background-image: url("https://ychef.files.bbci.co.uk/1600x900/p05clxkl.webp");
+}
+
+.illustration-2 {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BNDZjMmEwNjEtZTQxMy00M2FjLThmMDYtODg2OGNiNTVjODE4XkEyXkFqcGdeQXVyMTE0NTczNDAz._V1_.jpg");
+    background-size: 110% !important;
+    background-position: center;
+}
+
+.author-date-text {
+    font-family: "PP Neue Machina Plain Regular", sans-serif;
+    color: #8D9286;
+    margin-block: 20px;
+}
+
+.main-content .article-text {
+    margin-bottom: 30px;
+}
+
+.article-text:last-child {
+    margin-bottom: 0;
+}
+
+    /* RIGHT */
+
+.right-1-header {
+    display: flex;
+    justify-content: center;
+    background-color: #BA1A1A;
+    border-radius: 10px;
+    padding-block: 10px;
+    margin-bottom: 15px;
+}
+
+.right-1-header p {
+    margin: 0;
+    font-family: "PP Right Didone Wide Ultrabold", serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.right-1 {
+    background-color: #FFDAD6;
+    /*height: fit-content;*/
+}
+
+.right-2 {
+    background-color: #B1F588;
+}
+
+.right-2 .article-title {
+    margin-top: 35px;
+}
+
+.right-2 .article-title:first-child {
+    margin-top: 0;
+}
+
+:root {
+    --flower-mask: url("res/flowerMask.svg");
+}
+
+.right-3 {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 25px;
+}
+
+.featured-film-1,
+.featured-film-2,
+.featured-film-3 {
+    width: 100%;
+}
+
+.featured-film-1,
+.featured-film-3 {
+    border-radius: 100vw;
+}
+
+.featured-film-2 {
+    border-radius: 25px;
+}
