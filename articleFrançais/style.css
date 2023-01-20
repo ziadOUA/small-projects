@@ -64,10 +64,22 @@ html::-webkit-scrollbar {
     height: 200px;
 }
 
+.header-element {
+    display: flex;
+    margin-block: auto;
+    align-items: center;
+}
+
+.logo {
+    height: 120px;
+}
+
 .header {
     display: flex;
     align-items: center;
     user-select: none;
+    margin-inline: 20px;
+    gap: 20px;
 }
 
 .header-title {
@@ -120,7 +132,6 @@ html::-webkit-scrollbar {
     width: fit-content;
     display: flex;
     align-content: center;
-    margin-inline: 25px 0;
 }
 
 .connection {
@@ -280,15 +291,15 @@ html::-webkit-scrollbar {
 }
 
 .header-illustration {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8f/Some_like_it_hot_film_poster.jpg");
+    background-image: url("res/img/someLikeItHot1.webp");
 }
 
 .illustration-1 {
-    background-image: url("https://ychef.files.bbci.co.uk/1600x900/p05clxkl.webp");
+    background-image: url("res/img/someLikeItHot2.webp");
 }
 
 .illustration-2 {
-    background-image: url("https://m.media-amazon.com/images/M/MV5BNDZjMmEwNjEtZTQxMy00M2FjLThmMDYtODg2OGNiNTVjODE4XkEyXkFqcGdeQXVyMTE0NTczNDAz._V1_.jpg");
+    background-image: url("res/img/someLikeItHot3.webp");
     background-size: 110% !important;
     background-position: center;
 }
@@ -327,7 +338,6 @@ html::-webkit-scrollbar {
 
 .right-1 {
     background-color: #FFDAD6;
-    /*height: fit-content;*/
 }
 
 .right-2 {
@@ -353,17 +363,8 @@ html::-webkit-scrollbar {
     gap: 25px;
 }
 
-.featured-film-1,
-.featured-film-2,
-.featured-film-3 {
+.featured-film {
     width: 100%;
-}
-
-.featured-film-1,
-.featured-film-3 {
-    border-radius: 100vw;
-}
-
-.featured-film-2 {
+    aspect-ratio: auto;
     border-radius: 25px;
 }
