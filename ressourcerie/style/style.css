@@ -8,14 +8,11 @@
 	margin: 0;
 	padding: 0;
 	scrollbar-width: thin;
+	-webkit-tap-highlight-color: transparent;
 }
 
 a:link, .mobile-label:link {
 	text-decoration: none !important;
-}
-
-html {
-	overflow-y: hidden;
 }
 
 body {
