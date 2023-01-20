@@ -1,0 +1,13 @@
+.page-content {
+	height: fit-content;
+	padding: 10px 10px 10px 100px;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.page-content::-webkit-scrollbar {
+	display: none;
+}
