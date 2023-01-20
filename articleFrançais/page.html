@@ -6,18 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Les Cinéphiles</title>
-        <link rel="icon" href="res/logoCinema.svg">
+        <link rel="icon" href="res/logo.svg">
         <link rel="stylesheet" href="fonts/font.css">
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
+    <body onload="bodyLoaded()" style="opacity: 0;">
         <div class="header-wrapper">
             <div class="header">
-                <div class="header-element">
-                    <img src="res/logo.svg" class="logo" alt="Logo de Dumont Info">
-                    <h1 class="header-title">Dumont<br> Infos</h1>
-                </div>
                 <div class="header-element">
                     <img src="res/logoCinema.svg" class="header-img" alt="Logo Des cinéphiles du Lycée">
                     <div class="header-text">
@@ -42,8 +38,19 @@
 
         <div class="page-content-wrapper">
             <div class="left-content-wrapper">
-                <div class="left-header">
-
+                <div class="left-1">
+                    <p class="article-title">Facebook en faillite</p>
+                    <p class="article-text">
+                        « <i>Le Meta-verse fut une véritable catastrophe</i> ». Ce sont les mots prononcés par le directeur financier de Meta, entreprise mère de
+                        Facebook, alors que sa côte en bourse a baissé de plus de 99%.
+                    </p>
+                    <p class="article-title">Le monde entré dans une récession « <i>historique</i> »</p>
+                    <p class="article-text">Le PIB mondial a baissé d'environ 23% selon le FMI, tandis que la guerre à Taïwan fait rage</p>
+                    <p class="article-title">L'humanité proche du point de non-retour</p>
+                    <p class="article-text">
+                        On se dirige bel et bien vers un réchauffement de 3°C. Si rien n'est fait, alors l'humanité devra de préparer aux
+                        conséquences de ses actes préviennent l'OMS et le GIEC.
+                    </p>
                 </div>
             </div>
             <div class="main-content-wrapper">
@@ -155,5 +162,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="scripts/loadFix.js"></script>
     </body>
 </html>

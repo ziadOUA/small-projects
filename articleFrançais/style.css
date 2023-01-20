@@ -34,6 +34,7 @@ body {
     background-color: #F1F1EA;
     display: flex;
     flex-direction: column;
+    transition: opacity 200ms ease-in;
 }
 
 html {
@@ -79,7 +80,7 @@ html::-webkit-scrollbar {
     align-items: center;
     user-select: none;
     margin-inline: 20px;
-    gap: 20px;
+    gap: 30px;
 }
 
 .header-title {
@@ -206,7 +207,6 @@ html::-webkit-scrollbar {
 }
 
 .left-content-wrapper {
-    background-color: #B3EDED;
     grid-area: 1 / 1 / 2 / 2;
 }
 
@@ -228,7 +228,7 @@ html::-webkit-scrollbar {
     gap: 10px;
 }
 
-.left-content-wrapper,
+.left-1,
 .right-1,
 .right-2,
 .right-3 {
@@ -264,6 +264,18 @@ html::-webkit-scrollbar {
 }
 
     /* LEFT */
+
+.left-1 {
+    background-color: #B3EDED;
+}
+
+.left-1 .article-title {
+    margin-top: 35px;
+}
+
+.left-1 .article-title:first-child {
+    margin-top: 5px;
+}
 
     /* MAIN */
 
