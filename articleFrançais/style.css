@@ -55,8 +55,8 @@ html::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     background-color: #FDFDF5;
-    /*position: fixed;*/
-    /*top: 0;*/
+    position: fixed;
+    top: 0;
     width: 100%;
 }
 
@@ -169,9 +169,9 @@ html::-webkit-scrollbar {
 
 .inverted-topleft-corner,
 .inverted-topright-corner {
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*margin-top: 200px;*/
+    position: fixed;
+    top: 0;
+    margin-top: 200px;
     width: 24px;
     height: 24px;
     background-color: #FDFDF5;
@@ -185,8 +185,8 @@ html::-webkit-scrollbar {
 
 .inverted-topright-corner {
     margin-left: auto;
-    /*right: 0;*/
-    margin-top: -24px;
+    right: 0;
+    margin-top: 200px;
     -webkit-mask: var(--topright-mask);
     mask: var(--topright-mask);
 }
@@ -199,8 +199,7 @@ html::-webkit-scrollbar {
     grid-template-rows: 1fr;
     grid-column-gap: 0;
     grid-row-gap: 0;
-    /*margin-top: 210px;*/
-    margin-top: -10px;
+    margin-top: 210px;
     gap: 10px;
     margin-inline: 10px;
     margin-bottom: 10px;
@@ -228,10 +227,10 @@ html::-webkit-scrollbar {
     gap: 10px;
 }
 
+.left-2,
 .left-1,
 .right-1,
-.right-2,
-.right-3 {
+.right-2 {
     border-radius: 20px;
     padding: 15px;
 }
@@ -265,15 +264,15 @@ html::-webkit-scrollbar {
 
     /* LEFT */
 
-.left-1 {
+.left-2 {
     background-color: #B3EDED;
 }
 
-.left-1 .article-title {
+.left-2 .article-title {
     margin-top: 35px;
 }
 
-.left-1 .article-title:first-child {
+.left-2 .article-title:first-child {
     margin-top: 5px;
 }
 
@@ -332,7 +331,7 @@ html::-webkit-scrollbar {
 
     /* RIGHT */
 
-.right-1-header {
+.left-1-header {
     display: flex;
     justify-content: center;
     background-color: #BA1A1A;
@@ -341,26 +340,26 @@ html::-webkit-scrollbar {
     margin-bottom: 15px;
 }
 
-.right-1-header p {
+.left-1-header p {
     margin: 0;
     font-family: "PP Right Didone Wide Ultrabold", serif;
     font-size: 1.5rem;
     color: #fff;
 }
 
-.right-1 {
+.left-1 {
     background-color: #FFDAD6;
 }
 
-.right-2 {
+.right-1 {
     background-color: #B1F588;
 }
 
-.right-2 .article-title {
+.right-1 .article-title {
     margin-top: 35px;
 }
 
-.right-2 .article-title:first-child {
+.right-1 .article-title:first-child {
     margin-top: 0;
 }
 
@@ -368,7 +367,7 @@ html::-webkit-scrollbar {
     --flower-mask: url("res/flowerMask.svg");
 }
 
-.right-3 {
+.right-2 {
     display: flex;
     flex-direction: column;
     height: fit-content;
