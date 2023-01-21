@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "PP Neue Machina Inktrap Ultrabold";
+	src: url("../fonts/Neue Machina/PPNeueMachina-InktrapUltrabold.otf");
+}
+
+@font-face {
+	font-family: "PP Neue Machina Plain Regular";
+	src: url("../fonts/Neue Machina/PPNeueMachina-PlainRegular.otf");
+}
+
+@font-face {
+	font-family: "PP Neue Machina Plain Ultrabold";
+	src: url("../fonts/Neue Machina/PPNeueMachina-PlainUltrabold.otf");
+}
+
+@font-face {
+	font-family: "PP Mori Regular";
+	src: url("../fonts/Mori/PPMori-Regular.otf");
+}
+
+@font-face {
+	font-family: "PP Right Didone Wide Ultrabold";
+	src: url("../fonts/Right Didone/PP Right Didone - Wide Black.otf");
+}

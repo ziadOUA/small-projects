@@ -1,29 +1,4 @@
-@font-face {
-    font-family: "PP Neue Machina Inktrap Ultrabold";
-    src: url("fonts/Neue Machina/PPNeueMachina-InktrapUltrabold.otf");
-}
-
-@font-face {
-    font-family: "PP Neue Machina Plain Regular";
-    src: url("fonts/Neue Machina/PPNeueMachina-PlainRegular.otf");
-}
-
-@font-face {
-    font-family: "PP Neue Machina Plain Ultrabold";
-    src: url("fonts/Neue Machina/PPNeueMachina-PlainUltrabold.otf");
-}
-
-@font-face {
-    font-family: "PP Mori Regular";
-    src: url("fonts/Mori/PPMori-Regular.otf");
-}
-
-@font-face {
-    font-family: "PP Right Didone Wide Ultrabold";
-    src: url("fonts/Right Didone/PP Right Didone - Wide Black.otf");
-}
-
-/* PAGE */
+@import "fonts.css";
 
 * {
     -webkit-tap-highlight-color: transparent;
@@ -302,15 +277,15 @@ html::-webkit-scrollbar {
 }
 
 .header-illustration {
-    background-image: url("res/img/someLikeItHot1.webp");
+    background-image: url("../res/img/someLikeItHot1.webp");
 }
 
 .illustration-1 {
-    background-image: url("res/img/someLikeItHot2.webp");
+    background-image: url("../res/img/someLikeItHot2.webp");
 }
 
 .illustration-2 {
-    background-image: url("res/img/someLikeItHot3.webp");
+    background-image: url("../res/img/someLikeItHot3.webp");
     background-size: 110% !important;
     background-position: center;
 }
@@ -364,7 +339,7 @@ html::-webkit-scrollbar {
 }
 
 :root {
-    --flower-mask: url("res/flowerMask.svg");
+    --flower-mask: url("../res/flowerMask.svg");
 }
 
 .right-2 {
