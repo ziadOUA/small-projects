@@ -26,16 +26,41 @@ html::-webkit-scrollbar {
 
 .header-img,
 .header,
-.header-wrapper {
-    transition: height 200ms ease-in;
+.header-wrapper,
+.connection-wrapper {
+    transition: height 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 
-.scroll {
-    height: 100px !important;
+.header-img.scroll,
+.header.scroll,
+.header-wrapper.scroll,
+.connection-wrapper.scroll {
+    height: 100px;
 }
 
-.hidden {
-    display: none;
+.inverted-topleft-corner,
+.inverted-topright-corner {
+    transition: margin-top 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+
+.page-content-wrapper.scroll {
+    margin-top: 110px;
+}
+
+.inverted-topleft-corner.scroll,
+.inverted-topright-corner.scroll {
+    margin-top: 100px;
+}
+
+.header-subtitle,
+.language-wrapper {
+    transition: opacity 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+
+.header-subtitle.hidden,
+.language-wrapper.hidden {
+    opacity: 0;
+    cursor: default;
 }
 
 /* HEADER */
@@ -122,6 +147,8 @@ html::-webkit-scrollbar {
     width: fit-content;
     display: flex;
     align-content: center;
+    height: 200px;
+    flex-wrap: wrap;
 }
 
 .connection {
@@ -192,6 +219,7 @@ html::-webkit-scrollbar {
     gap: 10px;
     margin-inline: 10px;
     margin-bottom: 10px;
+    transition: margin-top 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 
 .left-content-wrapper {
