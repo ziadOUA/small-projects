@@ -24,6 +24,22 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+/* SCROLL */
+
+.header-img,
+.header,
+.header-wrapper {
+    transition: height 200ms ease-in;
+}
+
+.scroll {
+    height: 100px !important;
+}
+
+.hidden {
+    display: none;
+}
+
 /* HEADER */
 
 .header-wrapper {
