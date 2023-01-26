@@ -22,7 +22,10 @@ function navBar() {
 		navbarPanel.classList.remove("open");
 		navbarPanel.classList.add("hiding");
 		navbar.className = "nav-bar-mobile visible";
-		setTimeout(() => {  navbarPanel.className = "nav-bar-mobile-panel";}, 300); }
+		setTimeout(() => {
+			navbarPanel.className = "nav-bar-mobile-panel";
+			navbar.className = "nav-bar-mobile";}, 300);
+	}
 }
 
 function homeSelected() {

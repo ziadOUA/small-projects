@@ -34,7 +34,7 @@
 .info-icon,
 .back-icon,
 .contact-icon {
-    margin: -2px auto 5px;
+    margin: 0 auto 5px;
     width: 56px;
     height: 32px;
     display: flex;

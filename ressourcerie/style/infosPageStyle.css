@@ -1,0 +1,69 @@
+.info-container {
+	border-radius: 35px;
+	background-color: var(--md-sys-color-primary-container);
+	padding: 30px 40px 30px 40px;
+	margin-top: 10px;
+}
+
+.informations {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: var(--font-size-s);
+	text-align: justify;
+}
+
+.info-content .title-page-container {
+	background-image: url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+	background-position: center;
+}
+
+.logo-container .material-symbols-rounded {
+	font-size: 160px;
+	color: var(--white);
+}
+
+/* GALLERIE PAGE INFORMATIONS */
+
+.info-gallery-element {
+	display: flex;
+	gap: 10px;
+	min-height: 180px;
+}
+
+.info-gallery-container {
+	margin-bottom: var(--l-margin);
+}
+
+.gallery-description-container {
+	border-radius: 35px;
+	background-color: var(--md-sys-color-tertiary-container-unthemed);
+	padding: 30px 40px 30px 40px;
+	width: fit-content;
+}
+
+.gallery-description-text {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 1rem;
+	text-align: justify;
+	color: var(--md-sys-color-on-tertiary-container-unthemed);
+}
+
+.info-gallery-image-1 {
+	background-image: url('https://i.picsum.photos/id/15/2500/1667.jpg?hmac=Lv03D1Y3AsZ9L2tMMC1KQZekBVaQSDc1waqJ54IHvo4');
+}
+
+.info-gallery-image-2 {
+	background-image: url('https://i.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU');
+}
+
+.info-gallery-image-3 {
+	background-image: url('https://i.picsum.photos/id/39/3456/2304.jpg?hmac=cc_VPxzydwTUbGEtpsDeo2NxCkeYQrhTLqw4TFo-dIg');
+}
+
+.info-gallery-image-1,
+.info-gallery-image-2,
+.info-gallery-image-3 {
+	height: inherit;
+	width: 300px;
+	border-radius: 500px;
+	background-size: cover;
+}
