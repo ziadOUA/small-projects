@@ -58,7 +58,9 @@ img {
 		filter: grayscale(0%);
 	}
 
-	.hamburger-menu:hover, .mobile-close-nav-icon:hover, .header:hover {
+	.hamburger-menu:hover,
+	.mobile-close-nav-icon:hover,
+	.header:hover {
 		background-color: var(--transparent-grey);
 	}
 }
@@ -172,104 +174,47 @@ img {
 	}
 }
 
-/* HOVER TRANSITIONS */
+/* ICONS */
 
-.info-icon,
-.back-icon,
-.contact-icon,
-.home-icon,
-.mobile-home-icon-container,
-.mobile-info-icon-container,
-.mobile-back-icon-container,
-.mobile-contact-icon-container {
+.icon-container > a,
+.nav-bar-mobile-contents > a {
     transition: all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
     cursor: pointer;
 }
 
 @media(pointer: fine) {
-	.home-icon:hover,
-	.info-icon:hover,
-	.back-icon:hover,
-	.contact-icon:hover,
-	.mobile-home-icon-container:hover,
-	.mobile-info-icon-container:hover,
-	.mobile-back-icon-container:hover,
-	.mobile-contact-icon-container:hover {
+	.icon-container > a:hover:not(.selected),
+	.nav-bar-mobile-contents > a:hover:not(.selected) {
 	    background: var(--md-ref-palette-neutral-80);
 	}
 }
 
-.home-icon:hover .material-symbols-rounded,
-.info-icon:hover .material-symbols-rounded,
-.back-icon:hover .material-symbols-rounded,
-.contact-icon:hover .material-symbols-rounded,
-.mobile-home-icon-container:hover .material-symbols-rounded,
-.mobile-info-icon-container:hover .material-symbols-rounded,
-.mobile-back-icon-container:hover .material-symbols-rounded,
-.mobile-contact-icon-container:hover .material-symbols-rounded {
+.icon-container > a:hover:not(.selected) .material-symbols-rounded,
+.nav-bar-mobile-contents > a:hover:not(.selected) .material-symbols-rounded {
     font-variation-settings:
        'wght' 800,
        'GRAD' 0,
        'opsz' 48;
 }
 
-/* HOME SELECTIONNÉ */
-
-.home-icon.selected,
-.mobile-home-icon-container.selected {
+.icon-container > a.selected,
+.nav-bar-mobile-contents > a.selected {
 	background: var(--md-sys-color-primary-80);
 }
 
-.home-icon.selected .material-symbols-rounded,
-.mobile-home-icon-container.selected .material-symbols-rounded {
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
-    color: #442C00;
-}
-
-/* INFO SELECTIONNÉ */
-
-.info-icon.selected,
-.mobile-info-icon-container.selected {
-    background: var(--md-sys-color-primary-80);
-}
-
-.info-icon.selected .material-symbols-rounded,
-.mobile-info-icon-container.selected .material-symbols-rounded {
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
-    color: #442C00;
-}
-
-/* CONTACT SELECTIONNÉ */
-
-.contact-icon.selected,
-.mobile-contact-icon-container.selected {
-    background: var(--md-sys-color-primary-80);
-}
-
-.contact-icon.selected .material-symbols-rounded,
-.mobile-contact-icon-container.selected .material-symbols-rounded {
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
-    color: #442C00
+.icon-container > a.selected .material-symbols-rounded,
+.nav-bar-mobile-contents > a.selected .material-symbols-rounded {
+	font-variation-settings:
+			'FILL' 1,
+			'wght' 400,
+			'GRAD' 0,
+			'opsz' 48;
+	color: #442C00;
 }
 
 /* COULEURS DE FOND DES ICÔNES */
 
-.info-icon,
-.back-icon,
-.contact-icon,
-.home-icon {
+.icon-container > a:not(.selected) {
 	background: var(--md-ref-palette-neutral-90);
 }
 
