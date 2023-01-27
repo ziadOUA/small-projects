@@ -87,14 +87,13 @@ img {
 
 .title-page-container {
 	display: flex;
-	align-content: center;
+	justify-content: center;
 	background-image: url("https://pictshare.net/900/1600/srn4t5.jpg");
 	background-size: cover;
 	border-radius: 35px;
 }
 
 .title-elements {
-	margin: auto;
 	display: flex;
 	align-items: center;
 	height: 500px;
@@ -102,7 +101,7 @@ img {
 
 .title {
 	background-color: var(--md-sys-color-tertiary);
-	border-radius: 100px;
+	border-radius: 100vh;
 	height: 160px;
 	display: flex;
 	flex-direction: column;
@@ -158,8 +157,7 @@ img {
 	grid-auto-flow: row;
 	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: minmax(var(--min), auto);
-	gap: 15px;
-	margin-top: 2rem;
+	gap: 10px;
 }
 
 .photo {
@@ -178,14 +176,14 @@ img {
 
 .icon-container > a,
 .nav-bar-mobile-contents > a {
-    transition: all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
-    cursor: pointer;
+	transition: all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	cursor: pointer;
 }
 
 @media(pointer: fine) {
 	.icon-container > a:hover:not(.selected),
 	.nav-bar-mobile-contents > a:hover:not(.selected) {
-	    background: var(--md-ref-palette-neutral-80);
+	    background: var(--md-ref-palette-neutral-90);
 	}
 }
 
@@ -209,13 +207,7 @@ img {
 			'wght' 400,
 			'GRAD' 0,
 			'opsz' 48;
-	color: #442C00;
-}
-
-/* COULEURS DE FOND DES ICÔNES */
-
-.icon-container > a:not(.selected) {
-	background: var(--md-ref-palette-neutral-90);
+	color: var(--md-sys-color-on-primary-20);
 }
 
 /* MEDIA QUERIES */
@@ -229,10 +221,7 @@ img {
 		font-size: var(--font-size-s);
 	}
 
-	.title {
-		height: 120px;
-	}
-
+	.title,
 	.logo {
 		height: 120px;
 	}
@@ -265,18 +254,6 @@ img {
 		width: fit-content;
 	}
 
-	.logo-lycee-container {
-		grid-area: 1 / 1 / 2 / 2;
-	}
-
-	.separator {
-		grid-area: 1 / 2 / 2 / 3;
-	}
-
-	.image-icon {
-		grid-area: 1 / 3 / 2 / 4;
-	}
-
 	.page-content {
 		padding: 60px 12px 12px;
 		width: calc(100% - 2 * var(--s-margin));
@@ -291,11 +268,62 @@ img {
 	.nav-bar-mobile {
 		position: fixed;
 	}
+
+	.nav-bar-mobile-panel.open {
+		display: grid;
+		opacity: 1;
+	}
+
+	.info-gallery-element {
+		flex-direction: column;
+	}
+
+	.info-gallery-image {
+		height: 250px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 720px) {
+	.nav-bar {
+		display: none;
+	}
+
+	.nav-bar-mobile {
+		position: fixed;
+		display: flex;
+	}
+
+	.title-page-container {
+		height: 200px;
+	}
+
+	.title-elements {
+		height: 200px;
+		align-items: center;
+	}
+
+	.logo-container {
+		margin: 0;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.gallery-elements-container {
+		grid-template-columns: 1fr;
+	}
 }
 
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
 	.nav-bar {
 		display: none;
+	}
+
+	.nav-bar-mobile {
+		display: flex;
+		position: fixed;
 	}
 
 	.page-content {
@@ -304,24 +332,9 @@ img {
 		width: 100%;
 	}
 
-	.nav-bar-mobile,
-	.nav-bar-mobile-elements {
-		display: flex;
-	}
-
-	.nav-bar-mobile {
-		position: fixed;
-	}
-
 	.title-elements {
 		align-items: center;
 		height: fit-content;
-
-	}
-
-	.title-page-container,
-	.info-title-container {
-		border-radius: 0;
 	}
 
 	.title-page-container {
@@ -335,15 +348,12 @@ img {
 
 	.title-text {
 		font-size: 2.8rem;
+		margin: 0;
+		line-height: 1;
 	}
 
 	.subtitle {
 		font-size: 0.8rem;
-	}
-
-	.title-text {
-		margin: 0;
-		line-height: 1;
 	}
 
 	.logo-container {
@@ -367,69 +377,5 @@ img {
 	.info-gallery-container,
 	.contact-container {
 		margin: var(--s-margin);
-	}
-}
-
-@media (max-width: 720px) {
-	.nav-bar {
-		display: none;
-	}
-
-	.nav-bar-mobile,
-	.nav-bar-mobile-elements {
-		display: flex;
-	}
-
-	.nav-bar-mobile {
-		position: fixed;
-	}
-
-	.title-page-container {
-		height: 200px;
-	}
-
-	.title-elements {
-		height: 200px;
-		align-items: center;
-	}
-
-	.logo-container {
-		margin: 0;
-	}
-
-	.logo {
-		display: none;
-	}
-
-	.gallery-elements-container {
-		grid-template-columns: 1fr;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.nav-bar-mobile-panel.open {
-		display: grid;
-		grid-template-rows: 1fr auto;
-		opacity: 1;
-	}
-
-	.nav-bar-mobile-contents {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(5, 1fr);
-		grid-column-gap: 0;
-		grid-row-gap: 0;
-		height: fit-content;
-	}
-
-	.info-gallery-element {
-		flex-direction: column;
-	}
-
-	.info-gallery-image-1,
-	.info-gallery-image-2,
-	.info-gallery-image-3 {
-		height: 250px !important;
-		width: 100% !important;
 	}
 }

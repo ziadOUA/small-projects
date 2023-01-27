@@ -19,40 +19,39 @@
         <div class="super-container">
             <div class="nav-bar">
                 <div class="nav-content">
-
                     <div class="icon-container">
-                        <a class="home-icon selected" id="home-icon" onclick="homeSelected()">
+                        <a class="icon home selected" id="home-icon" onclick="homeSelected()">
                             <span class="material-symbols-rounded">home</span>
                         </a>
                         <div class="label">Accueil</div>
                     </div>
 
                     <div class="icon-container">
-                        <a class="info-icon" id="info-icon" onclick="infoSelected()">
+                        <a class="icon info" id="info-icon" onclick="infoSelected()">
                             <span class="material-symbols-rounded">info</span>
                         </a>
                         <div class="label">Info.</div>
                     </div>
 
                     <div class="icon-container">
-                        <a class="back-icon" onclick="location.href = document.referrer; return false;" id="back-icon">
+                        <a class="icon back" onclick="location.href = document.referrer; return false;" id="back-icon">
                             <span class="material-symbols-rounded">arrow_back</span>
                         </a>
                         <div class="label">Retour</div>
                     </div>
 
                     <div class="icon-container">
-                        <a class="contact-icon" id="contact-icon" onclick="contactSelected()">
+                        <a class="icon contact" id="contact-icon" onclick="contactSelected()">
                             <span class="material-symbols-rounded">mail</span>
                         </a>
                         <div class="label">Contact</div>
                     </div>
-
                 </div>
+
                 <a href="https://lyceedumontdurville.fr/">
                     <img alt="Logo du Lycée Dumont-D'Urville" class="logo-lycee" src="res/img/logolycee.png">
                 </a>
-                <img alt="Image d'un oiseau" class="image-icon" src="res/img/bird.png">
+                <img alt="Image d'un oiseau" class="image-icon" src="res/img/bird.png" title="Site réalisé par Ziad OUALHADJ">
             </div>
 
             <div class="nav-bar-mobile" id="nav-bar-mobile">
@@ -79,28 +78,28 @@
                         </a>
                     </div>
 
-                    <a class="mobile-home-icon-container selected" id="mobile-home-icon" onclick="homeSelected()">
+                    <a class="mobile-icon-container home selected" id="mobile-home-icon" onclick="homeSelected()">
                         <p class="mobile-home-icon">
                             <span class="material-symbols-rounded">home</span>
                         </p>
                         <div class="mobile-label">Accueil</div>
                     </a>
 
-                    <a class="mobile-info-icon-container" id="mobile-info-icon" onclick="infoSelected()">
+                    <a class="mobile-icon-container info" id="mobile-info-icon" onclick="infoSelected()">
                         <p class="mobile-info-icon">
                             <span class="material-symbols-rounded">info</span>
                         </p>
                         <div class="mobile-label">Info.</div>
                     </a>
 
-                    <a class="mobile-back-icon-container" onclick="location.href = document.referrer; return false;" id="mobile-back-icon">
+                    <a class="mobile-icon-container back" onclick="location.href = document.referrer; return false;" id="mobile-back-icon">
                         <p class="mobile-back-icon">
                             <span class="material-symbols-rounded">arrow_back</span>
                         </p>
                         <div class="mobile-label">Retour</div>
                     </a>
 
-                    <a class="mobile-contact-icon-container" id="mobile-contact-icon" onclick="contactSelected()">
+                    <a class="mobile-icon-container contact" id="mobile-contact-icon" onclick="contactSelected()">
                         <p class="mobile-contact-icon">
                             <span class="material-symbols-rounded">mail</span>
                         </p>
@@ -133,12 +132,12 @@
                     <div class="gallery-container">
                         <h1 class="gallery-label">/// Gallerie</h1>
                         <div class="gallery-elements-container">
-                            <div class="photo" style='background-image: url("https://i.picsum.photos/id/38/1280/960.jpg?hmac=HBrgyJHQOGVicaWoXgvdSfTakkAyv4BxAt4rF0DhWkU");'></div>
-                            <div class="photo" style='background-image: url("https://i.picsum.photos/id/37/2000/1333.jpg?hmac=vpYLNsQZwU2szsZc4Uo17cW786vR0GEUVq4icaKopQI");'></div>
-                            <div class="photo" style='background-image: url("https://i.picsum.photos/id/66/3264/2448.jpg?hmac=H9yvGug9-Lk5f-1qZqs6dEV-Yd40jFOIC7oudo4eBK4");'></div>
-                            <div class="photo" style='background-image: url("https://i.picsum.photos/id/93/2000/1334.jpg?hmac=HdhcVTbAYkFCXsu1qBRWeEPiy05Qjc3LbnMWJlfEFjo");'></div>
-                            <div class="photo" style='background-image: url("https://i.picsum.photos/id/112/4200/2800.jpg?hmac=8Qhr0ehkFOnlKO__aKhLMQTu2qzcAten9LHpBO6uk-k");'></div>
-                            <div class="photo" style='background-image: url("https://i.picsum.photos/id/125/1500/1000.jpg?hmac=s6pniw6JFp6F753Ow9mnVAVqt8tOcP8ZlZE5-aJ22co");'></div>
+                            <div class="photo" style='background-image: url("https://fastly.picsum.photos/id/38/1280/960.jpg?hmac=HBrgyJHQOGVicaWoXgvdSfTakkAyv4BxAt4rF0DhWkU");'></div>
+                            <div class="photo" style='background-image: url("https://fastly.picsum.photos/id/37/2000/1333.jpg?hmac=vpYLNsQZwU2szsZc4Uo17cW786vR0GEUVq4icaKopQI");'></div>
+                            <div class="photo" style='background-image: url("https://fastly.picsum.photos/id/66/3264/2448.jpg?hmac=H9yvGug9-Lk5f-1qZqs6dEV-Yd40jFOIC7oudo4eBK4");'></div>
+                            <div class="photo" style='background-image: url("https://fastly.picsum.photos/id/93/2000/1334.jpg?hmac=HdhcVTbAYkFCXsu1qBRWeEPiy05Qjc3LbnMWJlfEFjo");'></div>
+                            <div class="photo" style='background-image: url("https://fastly.picsum.photos/id/112/4200/2800.jpg?hmac=8Qhr0ehkFOnlKO__aKhLMQTu2qzcAten9LHpBO6uk-k");'></div>
+                            <div class="photo" style='background-image: url("https://fastly.picsum.photos/id/125/1500/1000.jpg?hmac=s6pniw6JFp6F753Ow9mnVAVqt8tOcP8ZlZE5-aJ22co");'></div>
                         </div>
                     </div>
                 </div>
@@ -168,7 +167,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis consequat erat, vel blandit ligula. Aliquam a ipsum mauris. Vestibulum accumsan, risus sit amet vulputate blandit, ipsum enim blandit sapien, vitae accumsan arcu quam eu dui. Vestibulum a varius orci, in suscipit quam. Nam ipsum ex, interdum at tellus sit amet, vulputate iaculis nibh. Phasellus eget tellus in tortor tempus aliquet. Maecenas auctor, turpis sed laoreet laoreet, purus erat suscipit lacus, id malesuada elit augue sed risus. Donec feugiat dui ut justo hendrerit, vitae cursus odio ornare. Nullam at neque eros. Suspendisse in iaculis eros, eu consequat justo. Sed quis ullamcorper sapien, eu pellentesque tortor. Vestibulum fringilla odio lectus, eu euismod dui venenatis ut. Sed vitae imperdiet tortor, at sollicitudin ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque id suscipit mauris.
                                 </p>
                             </div>
-                            <div class="info-gallery-image-1"></div>
+                            <div class="info-gallery-image" style="background-image: url('https://fastly.picsum.photos/id/15/2500/1667.jpg?hmac=Lv03D1Y3AsZ9L2tMMC1KQZekBVaQSDc1waqJ54IHvo4');"></div>
                         </div>
                         <h1 class="gallery-label">Le Lieu</h1>
                         <div class="info-gallery-element">
@@ -177,7 +176,7 @@
                                     Nulla ullamcorper enim quis porta suscipit. Proin turpis orci, suscipit vel viverra in, euismod ultrices ante. Duis nisi ex, vehicula a est sit amet, porta sagittis augue. Cras sit amet faucibus mi. Curabitur malesuada neque ante, id vulputate tellus blandit sed. Pellentesque pellentesque, risus vel imperdiet malesuada, nunc enim lacinia sem, sit amet blandit nibh risus ac eros. Pellentesque eleifend est sit amet ante sollicitudin, id vulputate metus congue. Suspendisse sit amet nulla nibh. Proin id tincidunt eros. Morbi congue nec odio in iaculis.
                                 </p>
                             </div>
-                            <div class="info-gallery-image-2"></div>
+                            <div class="info-gallery-image" style="background-image: url('https://fastly.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU');"></div>
                         </div>
                         <h1 class="gallery-label">Les Objectifs</h1>
                         <div class="info-gallery-element">
@@ -186,7 +185,7 @@
                                     Quisque tincidunt, enim ut laoreet tristique, ex enim suscipit arcu, eu tincidunt eros eros sed elit. Fusce efficitur sapien ac dolor dignissim lobortis. Maecenas sollicitudin accumsan fermentum. Mauris sit amet est sit amet tellus euismod faucibus. Suspendisse tempus a lectus id interdum. Nulla facilisi. Nam gravida turpis fermentum pharetra pretium. Aliquam sit amet nunc varius, dignissim elit ut, accumsan diam. Praesent dictum volutpat diam vitae suscipit. Integer in elit ut nisi aliquam vestibulum in a felis. Nam scelerisque ex enim, condimentum sollicitudin velit ornare non. Fusce elementum pharetra justo, quis aliquet massa suscipit et. Integer mattis dolor augue, eu scelerisque tellus facilisis fermentum. Sed vehicula nec velit mattis ultricies. Praesent non purus vehicula, bibendum dolor eu, commodo massa.
                                 </p>
                             </div>
-                            <div class="info-gallery-image-3"></div>
+                            <div class="info-gallery-image" style="background-image: url('https://fastly.picsum.photos/id/39/3456/2304.jpg?hmac=cc_VPxzydwTUbGEtpsDeo2NxCkeYQrhTLqw4TFo-dIg');"></div>
                         </div>
                     </div>
                 </div>

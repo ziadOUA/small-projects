@@ -47,21 +47,7 @@
 	color: var(--md-sys-color-on-tertiary-container-unthemed);
 }
 
-.info-gallery-image-1 {
-	background-image: url('https://i.picsum.photos/id/15/2500/1667.jpg?hmac=Lv03D1Y3AsZ9L2tMMC1KQZekBVaQSDc1waqJ54IHvo4');
-}
-
-.info-gallery-image-2 {
-	background-image: url('https://i.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU');
-}
-
-.info-gallery-image-3 {
-	background-image: url('https://i.picsum.photos/id/39/3456/2304.jpg?hmac=cc_VPxzydwTUbGEtpsDeo2NxCkeYQrhTLqw4TFo-dIg');
-}
-
-.info-gallery-image-1,
-.info-gallery-image-2,
-.info-gallery-image-3 {
+.info-gallery-image {
 	height: inherit;
 	width: 300px;
 	border-radius: 500px;

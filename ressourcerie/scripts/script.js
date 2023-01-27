@@ -29,7 +29,7 @@ function navBar() {
 }
 
 function homeSelected() {
-	if (homeIcon.className === "home-icon") {
+	if (homeIcon.className === "icon home") {
 		homeIcon.classList.add("selected");
 		mobileHomeIcon.classList.add("selected");
 
@@ -46,7 +46,7 @@ function homeSelected() {
 }
 
 function infoSelected() {
-	if (infoIcon.className === "info-icon") {
+	if (infoIcon.className === "icon info") {
 		infoIcon.classList.add("selected");
 		mobileInfoIcon.classList.add("selected");
 
@@ -64,7 +64,7 @@ function infoSelected() {
 }
 
 function contactSelected() {
-	if (contactIcon.className === "contact-icon") {
+	if (contactIcon.className === "icon contact") {
 		contactIcon.classList.add("selected");
 		mobileContactIcon.classList.add("selected");
 
