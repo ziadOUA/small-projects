@@ -9,7 +9,7 @@
 Discover this small collection of front-end HTML projects :
 
 <a href="https://ziadoua.github.io/small-HTML-projects/articleFrançais/page.html">Project 1</a>
-<p>This first project is a French homework. We had to write an article about the film <i>"Some like it hot"</i>.<br>Besides the main article (which is the one about the film), the other ones (left and right) describe a dystopian future, in 2029 (2029 being 70 years after the initial film release).</p>
+<p>This first project is a French homework. We had to write an article about the film <i>"Some like it hot"</i>.<br>Besides the main article (which is the one about the film), the other ones (left and right) describe a rather dystopian future (especially for France), in 2029 (2029 being 70 years after the initial film release).</p>
 
 <a href="https://ziadoua.github.io/small-HTML-projects/ressourcerie/page.html">Project 2</a>
 <p>This one is a small website made for the <i>"Ressourcerie"</i> (translates to a <i>"resale store"</i>) of the high school I'm currently in.</p>
