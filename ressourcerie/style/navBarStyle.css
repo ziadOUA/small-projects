@@ -4,7 +4,7 @@
     min-width: 90px;
     height: 100%;
     overflow: hidden;
-    background: var(--md-ref-palette-neutral-95);
+    background: var(--neutral-95);
     align-items: center;
     flex-direction: column;
 }
@@ -100,7 +100,7 @@
     font-size: 20px;
     line-height: 1;
     text-align: center;
-    color: var(--md-sys-color-on-primary-20);
+    color: var(--primary-20);
     user-select: none;
 }
 
@@ -108,7 +108,7 @@
     margin-right: 16px;
     margin-left: 16px;
     font-size: 30px;
-    color: var(--md-sys-color-on-primary-20);
+    color: var(--primary-20);
 }
 
 .mobile-nav-panel-footer {
@@ -134,7 +134,7 @@
     position: fixed;
     width: 300px;
     height: 100vh;
-    background-color: var(--md-ref-palette-neutral-95);
+    background-color: var(--neutral-95);
     opacity: 0;
     grid-auto-rows: 1fr auto;
     border-radius: 0 30px 30px 0;

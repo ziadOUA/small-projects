@@ -1,7 +1,7 @@
 .info-container {
 	margin-top: 10px;
 	padding: 30px 40px 30px 40px;
-	background-color: var(--md-sys-color-primary-container);
+	background-color: var(--primary-90);
 	border-radius: 35px;
 }
 
@@ -36,7 +36,7 @@
 .gallery-description-container {
 	width: fit-content;
 	padding: 30px 40px 30px 40px;
-	background-color: var(--md-sys-color-tertiary-container-unthemed);
+	background-color: var(--quaternary-90);
 	border-radius: 35px;
 }
 
@@ -44,7 +44,7 @@
 	font-family: 'Lexend Deca', sans-serif;
 	font-size: 1rem;
 	text-align: justify;
-	color: var(--md-sys-color-on-tertiary-container-unthemed);
+	color: var(--quaternary-10);
 }
 
 .info-gallery-image {

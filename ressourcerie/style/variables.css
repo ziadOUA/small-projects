@@ -1,26 +1,37 @@
 :root {
-    --md-sys-color-primary-80: #F3BD6B;
-    --md-ref-palette-neutral-95: #F9EFE7;
-    --md-sys-color-on-primary-20: #442C00;
-    --md-ref-palette-neutral-90: #EAE1D9;
-    --md-ref-palette-neutral-80: #CEC5BD;
-    --md-sys-color-tertiary: #546348;
-    --md-sys-color-primary-container: #D7E8C6;
-    --md-sys-color-on-surface: #1E1B17;
-
-    --md-sys-color-tertiary-container-unthemed: #D8E5E4;
-    --md-sys-color-on-tertiary-container-unthemed: #121E1D;
-
     --white: #FFFFFF;
     --black: #1E1B17;
+
+    --primary-90: #D7E8C6;
+    --primary-80: #F3BD6B;
+    --primary-20: #442C00;
+
+    --neutral-95: #F9EFE7;
+    --neutral-90: #EAE1D9;
+    
+    --tertiary-40: #546348;
+    
+    --neutral-10: #1E1B17;
+
+    --quaternary-90: #D8E5E4;
+    --quaternary-10: #121E1D;
+
     --transparent-white: #FFFBFFCC;
     --transparent-grey: #7F766B33;
+}
 
+/* MARGINS */
+
+:root {
     --s-margin: 12px;
     --m-margin: 24px;
     --l-margin: 96px;
     --xl-margin: 256px;
+}
 
+/* FONT SIZES */
+
+:root {
     --font-size-s: 18px;
     --font-size-m: 22px;
     --font-size-l: 64px;

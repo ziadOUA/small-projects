@@ -1,13 +1,8 @@
-.contact-content .title-page-container {
-	background-image: url('https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80');
-	background-position: center;
-}
-
 .contact-container {
 	width: fit-content;
 	margin-top: 10px;
 	padding: 30px 40px 30px 40px;
-	background-color: var(--md-sys-color-tertiary-container-unthemed);
+	background-color: var(--quaternary-90);
 	border-radius: 35px;
 }
 
