@@ -1,6 +1,5 @@
 @import "variables.css";
 @import "animations.css";
-@import "fonts.css";
 @import "navBarStyle.css";
 @import "pageContentStyle.css";
 @import "infosPageStyle.css";
@@ -18,6 +17,7 @@ a:link, .mobile-label:link {
 
 body {
 	transition: opacity 200ms ease-in;
+	background-color: var(--white);
 }
 
 .hidden {
@@ -89,6 +89,7 @@ img {
 	display: flex;
 	background-image: url("https://pictshare.net/900/1600/srn4t5.jpg");
 	justify-content: center;
+	align-items: center;
 	background-size: cover;
 	border-radius: 35px;
 }
@@ -285,10 +286,6 @@ img {
 }
 
 @media (max-width: 720px) {
-	.nav-bar {
-		display: none;
-	}
-
 	.nav-bar-mobile {
 		display: flex;
 		position: fixed;
@@ -316,16 +313,7 @@ img {
 	}
 }
 
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-	.nav-bar {
-		display: none;
-	}
-
-	.nav-bar-mobile {
-		display: flex;
-		position: fixed;
-	}
-
+@media (max-width: 480px) {
 	.page-content {
 		width: 100%;
 		margin-top: 0;
@@ -339,6 +327,7 @@ img {
 
 	.title-page-container {
 		min-height: 10rem;
+		border-radius: 0;
 	}
 
 	.title {
@@ -354,14 +343,6 @@ img {
 
 	.subtitle {
 		font-size: 0.8rem;
-	}
-
-	.logo-container {
-		margin: 0;
-	}
-
-	.logo {
-		display: none;
 	}
 
 	.page-content {
