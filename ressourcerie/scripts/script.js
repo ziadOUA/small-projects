@@ -1,18 +1,18 @@
-const homeIcon = document.getElementById("home-icon");
-const mobileHomeIcon = document.getElementById("mobile-home-icon");
-const infoIcon = document.getElementById("info-icon");
-const mobileInfoIcon = document.getElementById("mobile-info-icon");
-const contactIcon = document.getElementById("contact-icon");
-const mobileContactIcon = document.getElementById("mobile-contact-icon");
+const homeIcon = document.querySelector("#home-icon");
+const mobileHomeIcon = document.querySelector("#mobile-home-icon");
+const infoIcon = document.querySelector("#info-icon");
+const mobileInfoIcon = document.querySelector("#mobile-info-icon");
+const contactIcon = document.querySelector("#contact-icon");
+const mobileContactIcon = document.querySelector("#mobile-contact-icon");
 
-const homeContent = document.getElementById("home-content")
-const infoContent = document.getElementById("info-content")
-const contactContent = document.getElementById("contact-content")
+const homeContent = document.querySelector("#home-content");
+const infoContent = document.querySelector("#info-content");
+const contactContent = document.querySelector("#contact-content");
+
+const navbarPanel = document.querySelector("#nav-bar-mobile-panel");
+const navbar = document.querySelector("#nav-bar-mobile");
 
 function navBar() {
-	const navbarPanel = document.getElementById("nav-bar-mobile-panel");
-	const navbar = document.getElementById("nav-bar-mobile");
-
 	if (navbarPanel.className === "nav-bar-mobile-panel") {
 		navbarPanel.classList.add("open");
 		navbar.className = "nav-bar-mobile hiding";

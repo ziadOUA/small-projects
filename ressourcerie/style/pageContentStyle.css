@@ -11,3 +11,46 @@
 .page-content::-webkit-scrollbar {
 	display: none;
 }
+
+/* TITLE */
+
+.title-page-container {
+	display: flex;
+	background-image: url("https://pictshare.net/900/1600/srn4t5.jpg");
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	border-radius: 35px;
+}
+
+.title-elements {
+	display: flex;
+	height: 500px;
+	align-items: center;
+}
+
+.title {
+	display: grid;
+	grid-auto-rows: min-content;
+	align-content: center;
+	height: 160px;
+	background-color: var(--tertiary-40);
+	border-radius: 100vh;
+}
+
+.title-text {
+	margin: 0 50px 0 65px;
+	font-family: "Mofista", sans-serif;
+	font-size: var(--font-size-xl);
+	line-height: 1;
+	text-align: center;
+	color: var(--white);
+}
+
+.subtitle {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: var(--font-size-m);
+	text-align: center;
+	color: white;
+	overflow-wrap: normal;
+}
