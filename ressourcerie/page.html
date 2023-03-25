@@ -8,9 +8,8 @@
         <meta name="HandheldFriendly" content="true">
         <title>La Ressourcerie</title>
         <link rel="stylesheet" type="text/css" href="style/style.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <!-- Icons -->
+        <style>@font-face{font-family:Material Symbols Rounded;src:url('res/fonts/iconsRessourcerie.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}.material-symbols-rounded{font-family:'Material Symbols Rounded';font-weight:400;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-moz-osx-font-smoothing:grayscale}</style>
         <!-- Lexend Deca -->
         <style>@font-face{font-family: 'Lexend Deca';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/lexenddeca/v17/K2FifZFYk-dHSE0UPPuwQ7CrD94i-NCKm-U48M1wqxnD.woff2) format('woff2');unicode-range: U 0000-00FF, U 0131, U 0152-0153, U 02BB-02BC, U 02C6, U 02DA, U 02DC, U 2000-206F, U 2074, U 20AC, U 2122, U 2191, U 2193, U 2212, U 2215, U FEFF, U FFFD}</style>
         <!-- Mofista -->
@@ -24,28 +23,28 @@
                 <div class="nav-content">
                     <div class="icon-container">
                         <a class="icon home selected" id="home-icon" onclick="homeSelected()">
-                            <span class="material-symbols-rounded">home</span>
+                            <span class="material-symbols-rounded" id="home-font-icon">&#xe905;</span>
                         </a>
                         <div class="label">Accueil</div>
                     </div>
 
                     <div class="icon-container">
                         <a class="icon info" id="info-icon" onclick="infoSelected()">
-                            <span class="material-symbols-rounded">info</span>
+                            <span class="material-symbols-rounded" id="info-font-icon">&#xe906;</span>
                         </a>
                         <div class="label">Info.</div>
                     </div>
 
                     <div class="icon-container">
                         <a class="icon back" onclick="location.href = document.referrer; return false;" id="back-icon">
-                            <span class="material-symbols-rounded">arrow_back</span>
+                            <span class="material-symbols-rounded">&#xe900;</span>
                         </a>
                         <div class="label">Retour</div>
                     </div>
 
                     <div class="icon-container">
                         <a class="icon contact" id="contact-icon" onclick="contactSelected()">
-                            <span class="material-symbols-rounded">mail</span>
+                            <span class="material-symbols-rounded" id="contact-font-icon">&#xe90a;</span>
                         </a>
                         <div class="label">Contact</div>
                     </div>
@@ -61,7 +60,7 @@
                 <div class="nav-bar-mobile-elements">
                     <a href="javascript:void(0);">
                         <div class="hamburger-menu" onclick="navBar()">
-                            <span class="material-symbols-rounded">menu</span>
+                            <span class="material-symbols-rounded">&#xe90c;</span>
                         </div>
                     </a>
                     <a onclick="homeSelected()">
@@ -77,34 +76,34 @@
                 <div class="nav-bar-mobile-contents">
                     <div class="mobile-close-nav-icon-container">
                         <a class="mobile-close-nav-icon" onclick="navBar()">
-                            <span class="material-symbols-rounded">menu_open</span>
+                            <span class="material-symbols-rounded">&#xe90d;</span>
                         </a>
                     </div>
 
                     <a class="mobile-icon-container home selected" id="mobile-home-icon" onclick="homeSelected()">
                         <p class="mobile-home-icon">
-                            <span class="material-symbols-rounded">home</span>
+                            <span class="material-symbols-rounded" id="mobile-home-font-icon">&#xe904;</span>
                         </p>
                         <div class="mobile-label">Accueil</div>
                     </a>
 
                     <a class="mobile-icon-container info" id="mobile-info-icon" onclick="infoSelected()">
                         <p class="mobile-info-icon">
-                            <span class="material-symbols-rounded">info</span>
+                            <span class="material-symbols-rounded" id="mobile-info-font-icon">&#xe906;</span>
                         </p>
                         <div class="mobile-label">Info.</div>
                     </a>
 
                     <a class="mobile-icon-container back" onclick="location.href = document.referrer; return false;" id="mobile-back-icon">
                         <p class="mobile-back-icon">
-                            <span class="material-symbols-rounded">arrow_back</span>
+                            <span class="material-symbols-rounded">&#xe900;</span>
                         </p>
                         <div class="mobile-label">Retour</div>
                     </a>
 
                     <a class="mobile-icon-container contact" id="mobile-contact-icon" onclick="contactSelected()">
                         <p class="mobile-contact-icon">
-                            <span class="material-symbols-rounded">mail</span>
+                            <span class="material-symbols-rounded" id="mobile-contact-font-icon">&#xe90a;</span>
                         </p>
                         <div class="mobile-label">Contact</div>
                     </a>
@@ -213,6 +212,7 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="scripts/script.js"></script>
+        <script defer type="text/javascript" src="scripts/navSelection.js"></script>
+        <script defer type="text/javascript" src="scripts/onLoad.js"></script>
     </body>
 </html>
