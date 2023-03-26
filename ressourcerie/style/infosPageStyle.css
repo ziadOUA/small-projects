@@ -1,8 +1,8 @@
 .info-container {
-	margin-top: 10px;
-	padding: 30px 40px 30px 40px;
 	background-color: var(--primary-90);
 	border-radius: 35px;
+	margin-top: 10px;
+	padding: 30px 40px 30px 40px;
 }
 
 .informations {
@@ -17,16 +17,16 @@
 }
 
 .logo-container .material-symbols-rounded {
-	font-size: 160px;
 	color: var(--white);
+	font-size: 160px;
 }
 
 /* GALLERIE PAGE INFORMATIONS */
 
 .info-gallery-element {
 	display: flex;
-	min-height: 180px;
 	gap: 10px;
+	min-height: 180px;
 }
 
 .info-gallery-container {
@@ -34,22 +34,22 @@
 }
 
 .gallery-description-container {
-	width: fit-content;
-	padding: 30px 40px 30px 40px;
 	background-color: var(--quaternary-90);
 	border-radius: 35px;
+	padding: 30px 40px 30px 40px;
+	width: fit-content;
 }
 
 .gallery-description-text {
+	color: var(--quaternary-10);
 	font-family: 'Lexend Deca', sans-serif;
 	font-size: 1rem;
 	text-align: justify;
-	color: var(--quaternary-10);
 }
 
 .info-gallery-image {
-	width: 300px;
-	height: inherit;
-	border-radius: 500px;
 	background-size: cover;
+	border-radius: 500px;
+	height: inherit;
+	width: 300px;
 }

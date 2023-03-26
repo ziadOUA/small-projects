@@ -18,8 +18,8 @@ a:link, .mobile-label:link {
 }
 
 body {
-	transition: opacity 200ms ease-in;
 	background-color: var(--white);
+	transition: opacity 200ms ease-in;
 }
 
 .hidden {
@@ -36,9 +36,9 @@ img {
 
 .super-container {
 	display: flex;
+	flex-direction: column;
 	height: 100vh;
 	min-height: 100%;
-	flex-direction: column;
 }
 
 /* PARAMÈTRES PAR DÉFAUT MATERIAL SYMBOLS */
@@ -69,19 +69,19 @@ img {
 /* IMAGE BARRE NAVIGATION */
 
 .image-icon {
-	width: 56px;
-	margin-bottom: 20px;
 	cursor: pointer;
+	margin-bottom: 20px;
+	width: 56px;
 }
 
 /* LOGO LYCÉE */
 
 .logo-lycee {
-	width: 56px;
-	margin-bottom: 20px;
 	cursor: pointer;
 	filter: grayscale(100%);
+	margin-bottom: 20px;
 	transition: filter 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	width: 56px;
 }
 
 /* LOGO */
