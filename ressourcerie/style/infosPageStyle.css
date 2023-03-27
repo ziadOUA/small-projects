@@ -2,7 +2,7 @@
 	background-color: var(--primary-90);
 	border-radius: 35px;
 	margin-top: 10px;
-	padding: 30px 40px 30px 40px;
+	padding: 30px 40px;
 }
 
 .informations {
@@ -36,7 +36,7 @@
 .gallery-description-container {
 	background-color: var(--quaternary-90);
 	border-radius: 35px;
-	padding: 30px 40px 30px 40px;
+	padding: 30px 40px;
 	width: fit-content;
 }
 
