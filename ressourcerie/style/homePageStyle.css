@@ -4,7 +4,7 @@
 }
 
 .gallery-label {
-	color: var(--neutral-10);
+	color: var(--md-sys-color-on-background);
 	font-family: "Mofista", serif;
 	font-size: 3rem;
 	margin: var(--m-margin) auto var(--m-margin);

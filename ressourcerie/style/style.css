@@ -6,6 +6,7 @@
 @import "infosPageStyle.css";
 @import "contactPageStyle.css";
 @import "mediaQueries.css";
+@import "themes/theme.css";
 
 * {
 	margin: 0;
@@ -18,7 +19,7 @@ a:link, .mobile-label:link {
 }
 
 body {
-	background-color: var(--white);
+	background-color: var(--md-sys-color-background);
 	transition: opacity 200ms ease-in;
 }
 
@@ -44,7 +45,7 @@ img {
 /* PARAMÈTRES PAR DÉFAUT MATERIAL SYMBOLS */
 
 .material-symbols-rounded {
-	color: var(--black);
+	color: var(--md-sys-color-on-background);
 	user-select: none;
 }
 
@@ -79,7 +80,7 @@ img {
 .logo-lycee {
 	cursor: pointer;
 	filter: grayscale(100%);
-	margin-bottom: 20px;
+	margin-top: 20px;
 	transition: filter 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	width: 56px;
 }
@@ -93,42 +94,4 @@ img {
 
 .logo {
 	height: 160px;
-}
-
-/* ICONS */
-
-.icon-container > a,
-.nav-bar-mobile-contents > a {
-	cursor: pointer;
-	transition: all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
-}
-
-@media(any-pointer: fine) {
-	.icon-container > a:hover:not(.selected),
-	.nav-bar-mobile-contents > a:hover:not(.selected) {
-		background: var(--neutral-90);
-	}
-}
-
-.icon-container > a:hover:not(.selected) .material-symbols-rounded,
-.nav-bar-mobile-contents > a:hover:not(.selected) .material-symbols-rounded {
-    font-variation-settings:
-        'wght' 800,
-        'GRAD' 0,
-        'opsz' 48;
-}
-
-.icon-container > a.selected,
-.nav-bar-mobile-contents > a.selected {
-	background: var(--primary-80);
-}
-
-.icon-container > a.selected .material-symbols-rounded,
-.nav-bar-mobile-contents > a.selected .material-symbols-rounded {
-	color: var(--primary-20);
-	font-variation-settings:
-			'FILL' 1,
-			'wght' 400,
-			'GRAD' 0,
-			'opsz' 48;
 }
