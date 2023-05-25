@@ -24,6 +24,12 @@
                     <img alt="Logo du Lycée Dumont-D'Urville" class="logo-lycee" src="res/img/logolycee.png">
                 </a>
 
+                <div class="change-theme-wrapper">
+                    <div aria-label="Change the theme" tabindex="0" class="clickable change-theme" onmouseover="themeToggleHover()" onmouseleave="themeToggleLeave()" onclick="themeToggle()" onkeydown="if(event.key === 'Enter'){themeToggle()}">
+                        <span class="material-symbols-rounded" id="theme-icon">&#xe901;</span>
+                    </div>
+                </div>
+
                 <div class="nav-content">
                     <div class="icon-container">
                         <a class="icon home selected" id="home-icon" onclick="homeSelected()">
@@ -70,6 +76,11 @@
                             <p class="header-text">La Ressourcerie</p>
                         </div>
                     </a>
+                    <div class="navbar-mobile-change-theme">
+                        <div aria-label="Change the theme" class="clickable mobile-change-theme" onmouseover="themeToggleHover()" onmouseleave="themeToggleLeave()" onclick="themeToggle()" onkeydown="if(event.key === 'Enter'){themeToggle()}">
+                            <span id="mobile-theme-icon" class="material-symbols-rounded">&#xe901;</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -212,6 +223,7 @@
         </div>
 
         <script defer type="text/javascript" src="scripts/navSelection.js"></script>
+        <script defer type="text/javascript" src="scripts/themeToggle.js"></script>
         <script defer type="text/javascript" src="scripts/onLoad.js"></script>
     </body>
 </html>

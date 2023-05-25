@@ -37,3 +37,12 @@
     --font-size-l: 64px;
     --font-size-xl: 88px;
 }
+
+/* BORDER RADIUSES */
+
+:root {
+    --border-radius-s: 1.2rem;
+    --border-radius-m: 1.6rem;
+    --border-radius-l: 2.4rem;
+    --border-radius-xl: 3.2rem;
+}
